@@ -8,8 +8,7 @@ struct segTree {
     int start;
     segTree(int N) {
         start = 1;
-        for (; start < N; start *= 2)
-            ;
+        for (; start < N; start *= 2);
         memset(arr, 0, sizeof(arr));
     }
     void update(int i, int val) {
